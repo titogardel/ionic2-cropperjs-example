@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-title>Crop</ion-title>
+        <ion-buttons>
+            <button ion-button (click)="confirm()">
+                <ion-icon name='back'>Back</ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item *ngIf="imageB64 != null">
+        <img (load)="imageLoaded()" [src]="imageB64" #imgSrc>
+    </ion-item>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Devdactic Image Upload
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      Hello World, this is my camera app
+
+      <button ion-button icon-only (click)="presentActionSheet()">
+        <ion-icon>Photo</ion-icon>
+      </button>
+
+      <button ion-button icon-only (click)="presentCropModal(imgUri)">
+        <ion-icon name='crop'>Crop</ion-icon>
+      </button>
+
+    </ion-card-content>
+    <!--<p>ImgURI: {{ imgUri }}</p>-->
+  </ion-card>
+
+  <ion-item *ngIf="imgUri != null">
+    <img [src]="imgUri" #imgSrc>
+  </ion-item>
+
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/1398d9e2cdc7072d33093c600055380948cf8016/cropperjs/index.d.ts",
+    "raw": "registry:dt/cropperjs#0.0.0+20170120000953",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/1398d9e2cdc7072d33093c600055380948cf8016/cropperjs/index.d.ts"
+  }
+}
